@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks landing Page</title>
+    
+    <link rel="stylesheet" href="stars.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+
+            <ul>
+                <li><a href="Home">Home</a></li>
+                <li><a href="Home">Menu</a></li>
+                <li><a href="Home">What's New</a></li>
+                <li><a href="Home">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just coffee <br> It's <span> Starbucks</span></h2>
+                <p>Welcome to Starbucks, where every sip takes you on a journey. Step into our world of exceptional coffee, where your favorite brews and flavors come to life. Whether you're a latte enthusiast or a cold brew aficionado, we're here to make every moment special. Explore our menu, find your perfect cup, and savor the Starbucks experience. It's more than just coffee; it's a delicious adventure waiting for you.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgbox">
+                <img src="img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png') ; changecirclecolor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png') ; changecirclecolor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png') ; changecirclecolor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            
+            <li><a href="#"><img src="instagram.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            
+        </ul>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.Starbucks').src = anything;
+        }
+        function changecirclecolor(color){
+            const circle = document.querySelector('.circle').style.background = color ;
+            
+        }
+    </script>
+</body>
+</html>
